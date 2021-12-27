@@ -21,6 +21,6 @@ Java -jar jacococli.jar report ./jacoco.exec --classfiles target/classes --sourc
 ~~~
 执行成功后会在根目录下新增一个jacoReport的目录，里面有测试报告，如下图
 
-![Image](pic/2.pngraw=true "2.png")
+![Image](pic/2.png?raw=true "2.png")
 
-![Image](pic/3.pngraw=false "3.png")
+![Image](pic/3.pngr?aw=false "3.png")
