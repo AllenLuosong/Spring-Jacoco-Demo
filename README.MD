@@ -8,8 +8,7 @@ java -javaagent:jacocoagent.jar=includes=*,output=tcpserver,port=8080,address=12
   output=tcpserver表示以tcp的形式插桩。port=8080是jacoco开启的tcpserver的端口。address=127.0.0.1 对外开发的tcpserver的访问地址，配置为127.0.0.1的时候，dump数据只能在这台服务器上进行dump。配置为实际的ip地址的时候，就可以在任意一台机器上dump数据。target/demo-0.0.1-SNAPSHOT.jar表示运行target目录下需要测试覆盖率的jar包。
 
 运行截图：
-![IsXMnO.png](./1.png)
-
+![1.png](./1.png "1.png")
 2. 获取覆盖数据，生成 javaexc文件
 ~~~
 java -jar jacococli.jar dump --address 127.0.0.1 --port 8080 --destfile ./jacoco.exec --reset
@@ -22,5 +21,4 @@ Java -jar jacococli.jar report ./jacoco.exec --classfiles target/classes --sourc
 执行成功后会在根目录下新增一个jacoReport的目录，里面有测试报告，如下图
 
 ![IsXMnO.png](./2.png)
-
 ![IsXMnO.png](./3.png)
