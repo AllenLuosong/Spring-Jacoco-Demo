@@ -8,7 +8,7 @@ java -javaagent:jacocoagent.jar=includes=*,output=tcpserver,port=8080,address=12
   output=tcpserver表示以tcp的形式插桩。port=8080是jacoco开启的tcpserver的端口。address=127.0.0.1 对外开发的tcpserver的访问地址，配置为127.0.0.1的时候，dump数据只能在这台服务器上进行dump。配置为实际的ip地址的时候，就可以在任意一台机器上dump数据。target/demo-0.0.1-SNAPSHOT.jar表示运行target目录下需要测试覆盖率的jar包。
 
 运行截图：
-![1.png](blob/master/pic/1.png "1.png")
+![Image](pic/1.png "1.png")
 
 2. 获取覆盖数据，生成 javaexc文件
 ~~~
